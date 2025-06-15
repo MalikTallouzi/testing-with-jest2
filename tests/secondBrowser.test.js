@@ -24,7 +24,7 @@ test('Pushing a value updates the displayed top of stack', async () => {
     await alert.accept();
 
     const topOfStack = await driver.wait(
-        until.elementTextContains(driver.findElement(By.id('top_of_stack')), 'Bäst-I-Test'),
+        until.elementTextContains(driver.findElement(By.id('top_of_stack')), 'Jest-I-Test'),
         defaultTimeout
     );
 
